@@ -11,4 +11,4 @@ async def reset_database():
     await conn.run_sync(Base.metadata.drop_all) # テーブル削除 
     await conn.run_sync(Base.metadata.create_all) # テーブル作成 
 if __name__ == "__main__": # スクリプトで実行時のみ実行 
- asyncio.run(reset_database())
+  asyncio.run(reset_database())
