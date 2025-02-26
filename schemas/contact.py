@@ -1,7 +1,7 @@
 from pydantic import BaseModel, Field, EmailStr, HttpUrl
 from datetime import datetime
 
-class ContactListBase(BaseModel):
+class ContactList(BaseModel):
   id: int
   name: str = Field(..., min_length=2, max_length=50)
   created_at: datetime
